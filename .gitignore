@@ -33,3 +33,5 @@
 
 #Build Path
 /build/*
+build.bat
+run.bat
