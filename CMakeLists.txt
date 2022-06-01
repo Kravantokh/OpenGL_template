@@ -11,16 +11,14 @@ set( GLFW_BUILD_DOCS OFF CACHE BOOL "" FORCE )
 set( GLFW_BUILD_TESTS OFF CACHE BOOL "" FORCE )
 set( GLFW_BUILD_EXAMPLES OFF CACHE BOOL "" FORCE )
 
-set(GLFW_DIR ${PROJECT_SOURCE_DIR}/lib/glfw)
-set(GLEW_DIR ${PROJECT_SOURCE_DIR}/lib/glew)
-
-add_subdirectory(${GLEW_DIR}/build/cmake/)
-add_subdirectory(${GLFW_DIR})
-
-add_compile_definitions(GLEW_STATIC)
+set(GLFW_DIR ${PROJECT_SOURCE_DIR}/lib/glfw/)
+set(GL3W_DIR ${PROJECT_SOURCE_DIR}/lib/gl3w/)
 
 add_executable(main src/main.cpp)
 
-include_directories(${GLEW_DIR}/include/ ${GLFW_DIR}/include/)
+add_subdirectory(${GL3W_DIR})
+add_subdirectory(${GLFW_DIR})
 
-target_link_libraries(main glfw ${GLFW_LIBRARIES} ${PROJECT_SOURCE_DIR}/build/lib/libglew32.a ${OPENGL_LIBRARIES})
+include_directories(${GL3W_DIR}/include/ ${GLFW_DIR}/include/)
+
+target_link_libraries(main glfw gl3w ${OPENGL_LIBRARIES})
