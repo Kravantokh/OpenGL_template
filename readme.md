@@ -24,7 +24,9 @@ The file `src/main.cpp` contains a basic example code which creates an openGL co
 \*Linux-only dependency - may be installed with the package manager, in may case the command was `sudo pacman -S glu`
 
 ## Build process ##
-* Windows: run build.bat
-* Linux: run build.sh
+* Windows: run `build.bat`
+* Linux: run `build.sh`
+
+On linux don't forget to run `chmod +x build.sh`.
 
 Until now the build process has been tested on Windows 10 with the mentioned prerequisites.
