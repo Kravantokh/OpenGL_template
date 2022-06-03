@@ -14,6 +14,9 @@ set( GLFW_BUILD_EXAMPLES OFF CACHE BOOL "" FORCE )
 set(GLFW_DIR ${PROJECT_SOURCE_DIR}/lib/glfw/)
 set(GL3W_DIR ${PROJECT_SOURCE_DIR}/lib/gl3w/)
 
+#Some blackmagic from an issue (https://github.com/skaslev/gl3w/issues/66) on the github page of gl3w.
+execute_process(COMMAND python gl3w_gen.py --root ${PROJECT_BINARY_DIR}/lib/gl3w WORKING_DIRECTORY ${PROJECT_SOURCE_DIR}/lib/gl3w)
+
 add_executable(main ${PROJECT_SOURCE_DIR}/src/main.cpp)
 
 add_subdirectory(${GL3W_DIR})

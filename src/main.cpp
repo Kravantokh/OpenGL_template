@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include <GL/glew.h>
+#include <GL/gl3w.h>
 #include <GLFW/glfw3.h>
 
 const int k_MinMajorOpenGLVersion = 4;
@@ -8,14 +8,14 @@ const int k_MinMinorOpenGLVersion = 0;
 //Error callback function for GLFW to report errors.
 void error_callback(int error, const char* description)
 {
-    fprintf(stderr, "Error: %s\n", description);
+	fprintf(stderr, "Error: %s\n", description);
 }
 
 //Keyboard input handling.
 static void key_callback(GLFWwindow* window, int key, int scancode, int action, int mods)
 {
-    if (key == GLFW_KEY_ESCAPE && action == GLFW_PRESS)
-        glfwSetWindowShouldClose(window, GLFW_TRUE);
+	if (key == GLFW_KEY_ESCAPE && action == GLFW_PRESS)
+		glfwSetWindowShouldClose(window, GLFW_TRUE);
 }
 
 
@@ -39,7 +39,7 @@ int main(){
 	//Error-checking
 	if (!window)
 	{
-	    printf("Error. Could not create OpenGL context. Perhaps the minimum requiered version is not supported.");
+		printf("Error. Could not create OpenGL context. Perhaps the minimum required version is not supported.");
 		return -1;
 	}
 
@@ -48,19 +48,19 @@ int main(){
 	//Enable keypress handling.
 	glfwSetKeyCallback(window, key_callback);
 
-	//Initialize GLEW + some error checking.
-	GLenum err = glewInit();
-	if(err != GLEW_OK){
-		printf("Failed to initialize GLEW");
+	//Initialize GL3W + some error checking.
+	GLenum err = gl3wInit();
+	if(err != GL3W_OK){
+		printf("Failed to initialize GL3W");
 		return -1;
 	}
 
 	//Main loop
 	while (!glfwWindowShouldClose(window))
-    {
+	{
 		//Write you openGL code here.
 		glfwPollEvents();
-    }
+	}
 
 	//Terminate glfw before returning.
 	glfwTerminate();
