@@ -22,6 +22,7 @@ The file `src/main.cpp` contains a basic example code which creates an openGL co
 
 
 \*Linux-only dependency - may be installed with the package manager, in may case the command was `sudo pacman -S glu`
+This package may have a different name under other distros.
 
 ## Build process ##
 * Windows: run `build.bat`
@@ -29,4 +30,9 @@ The file `src/main.cpp` contains a basic example code which creates an openGL co
 
 On linux don't forget to run `chmod +x build.sh`.
 
-Until now the build process has been tested on Windows 10 with the mentioned prerequisites.
+Until now the build process has been succesfully tested on Arch Linux and Windows 10 with the mentioned build tools.
+
+## Errors you may meet ##
+
+`XInput headers not found; install libxi development package` - Installing the package `xorg-dev` may help on Ubuntu/Kubuntu.
+
