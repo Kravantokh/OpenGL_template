@@ -10,6 +10,10 @@ The file `src/main.cpp` contains a basic example code which creates an openGL co
 * CMake (obviously)
 * GNU GCC: g++ (mingw on windows)
 * ninja
+* glu\*
+
+
+\*Linux-only dependency - may be installed with the package manager, in may case the command was `sudo pacman -S glu`
 
 ## Build process ##
 * Windows: run build.bat
