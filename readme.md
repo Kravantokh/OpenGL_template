@@ -4,7 +4,7 @@ Basic OpenGL project template for c++ with cmake, glfw and gl3w meant to work ou
 
 ## Current code ##
 
-The file `src/main.cpp` contains a basic example code which creates an openGL context with the help of glfw.
+The file `src/main.cpp` contains a basic example code which creates an openGL context and opens it in a window with the help of glfw.
 
 ## Prerequisites ##
 * GNU GCC: g++ (mingw on windows)
