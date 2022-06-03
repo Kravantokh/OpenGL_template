@@ -14,7 +14,7 @@ set( GLFW_BUILD_EXAMPLES OFF CACHE BOOL "" FORCE )
 set(GLFW_DIR ${PROJECT_SOURCE_DIR}/lib/glfw/)
 set(GL3W_DIR ${PROJECT_SOURCE_DIR}/lib/gl3w/)
 
-add_executable(main src/main.cpp)
+add_executable(main ${PROJECT_SOURCE_DIR}/src/main.cpp)
 
 add_subdirectory(${GL3W_DIR})
 add_subdirectory(${GLFW_DIR})
