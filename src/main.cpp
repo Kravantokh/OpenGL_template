@@ -64,4 +64,7 @@ int main(){
 
 	//Terminate glfw before returning.
 	glfwTerminate();
+	
+	//Return as promised (despite the fact that the compiler would do it anyways)
+	return 0;
 }
