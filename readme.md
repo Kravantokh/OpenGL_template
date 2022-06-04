@@ -19,6 +19,7 @@ The file `src/main.cpp` contains a basic example code which creates an openGL co
 * GNU GCC: g++ (mingw on windows)
 * ninja
 * glu\*
+* Python (3 or 2 should both work)
 
 
 \*Linux-only dependency - may be installed with the package manager, in may case the command was `sudo pacman -S glu`
@@ -30,7 +31,7 @@ This package may have a different name under other distros.
 
 On linux don't forget to run `chmod +x build.sh`.
 
-Until now the build process has been succesfully tested on Arch Linux and Windows 10 with the mentioned build tools.
+Until now the build process has been succesfully tested on Arch Linux, Kubuntu 20.10 and Windows 10 with the mentioned build tools.
 
 ## Errors you may meet ##
 
