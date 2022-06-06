@@ -34,5 +34,5 @@ Until now the build process has been succesfully tested on Arch Linux, Kubuntu 2
 
 ## Errors you may meet ##
 
-`XInput headers not found; install libxi development package` - Installing the package `xorg-dev` may help on Ubuntu/Kubuntu.
+`XInput headers not found; install libxi development package` - Installing the package `xorg-dev` may help on Debian distros.
 
