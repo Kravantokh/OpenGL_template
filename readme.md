@@ -1,4 +1,4 @@
-# OpenGL_GLEW_GLFW_template #
+# OpenGL_template #
 
 Basic OpenGL project template for c++ with CMake, glfw and gl3w meant to work out of the box on Windows and Linux and eliminate as much frustration as possible in the setup phase of any OpenGL project.
 
