@@ -22,8 +22,7 @@ The file `src/main.cpp` contains a basic example code which creates an openGL co
 * Python (3 or 2 should both work)
 
 
-\*Linux-only dependency - may be installed with the package manager, in may case the command was `sudo pacman -S glu`
-This package may have a different name under other distros.
+\*Linux-only dependency - may be installed with the package manager. On Arch use the package glu exists on its own. On Debian the package containing it is `libglu1-mesa-dev`. On other distros it may be contained in a different package.
 
 ## Build process ##
 * Windows: run `build.bat`
