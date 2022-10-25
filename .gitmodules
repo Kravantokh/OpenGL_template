@@ -1,6 +1,6 @@
 [submodule "lib/glfw"]
 	path = lib/glfw
 	url = https://github.com/glfw/glfw
-[submodule "lib/gl3w"]
-	path = lib/gl3w
-	url = https://github.com/skaslev/gl3w
+[submodule "lib/bu_glw"]
+	path = lib/bu_glw
+	url = https://github.com/Kravantokh/bu_glw
