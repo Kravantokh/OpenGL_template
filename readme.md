@@ -6,9 +6,7 @@ Basic OpenGL project template for c++ with CMake, glfw and gl3w meant to work ou
 You should clone the repository with\
 `git clone --recursive https://github.com/Kravantokh/OpenGL_GLEW_GLFW_template/`\
 \
-If you have already cloned it without `--recursive` you may download the submodules with\
-`git submodule init` and then\
-`git submodule update`.
+If you have already cloned it without `--recursive` you may download the submodules with `git submodule init` and then `git submodule update`.
 
 ## Current code ##
 
