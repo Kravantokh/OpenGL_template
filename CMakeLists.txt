@@ -3,8 +3,12 @@ cmake_minimum_required(VERSION 3.22.2)
 project(OpenGL_Template VERSION 1.0)
 
 #Setting some variables
-set(CMAKE_CXX_STANDARD 20)
+set(CMAKE_CXX_STANDARD 11)
 set(CMAKE_CXX_STANDARD_REQUIRED True)
+set(CMAKE_EXPORT_COMPILE_COMMANDS TRUE)
+
+set(CMAKE_DISABLE_SOURCE_CHANGES ON)
+set(CMAKE_DISABLE_IN_SOURCE_BUILD ON)
 
 #Stop GLFW from generating docs, tests and examples
 set( GLFW_BUILD_DOCS OFF CACHE BOOL "" FORCE )
