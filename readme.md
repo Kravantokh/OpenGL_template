@@ -1,5 +1,8 @@
 # OpenGL_template #
 
+DISCLAIMER:
+This project is work in progress. It may be incomplete and may not even compile if I was lazy when doing the last push and certain things may be changed any time without any warnings (even breaking changes).
+
 Basic OpenGL project template for c++ with CMake, glfw and gl3w meant to work out of the box on Windows and Linux and eliminate as much frustration as possible in the setup phase of any OpenGL project or OpenGL prototype. It includes glfw.
 
 It also features my OpenGL C-style C++11 wrapper library for a less verbose API for OpenGL along with gl3w as the OpenGL function loader. [More details](https://github.com/Kravantokh/bu_glw).
