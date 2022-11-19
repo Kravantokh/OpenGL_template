@@ -64,6 +64,12 @@ int main()
     }
 
 	ShaderProgram prog("./vs.glsl", "./fs.glsl");
+	prog.registerUniform("Color");
+	prog.registerUniform("Color2");
+	prog.registerUniform("Color3");
+	prog.registerUniform("Color4");
+	prog.registerUniform("Color5");
+	prog.finishUniformRegistration();
 
     float vertices[] = {
          0.5f,  0.5f, 0.0f,  // top right
@@ -85,6 +91,12 @@ int main()
 	vao.bind_attributes();
 	
 	prog.use();
+	prog.setUniform(0, 0.20f, 0.20f, 0.20f, 1.0f);
+	prog.setUniform(1, 0.20f, 0.20f, 0.20f, 1.0f);
+	prog.setUniform(2, 0.20f, 0.20f, 0.20f, 1.0f);
+	prog.setUniform(3, 0.20f, 0.20f, 0.20f, 1.0f);
+	prog.setUniform(4, 0.20f, 0.20f, 0.20f, 1.0f);
+
 	vao.bind();
 
     while (!glfwWindowShouldClose(window))

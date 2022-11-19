@@ -31,6 +31,9 @@
 *.out
 *.app
 
-#Build Path
+# Build Path
 /build/*
+# Vim Session files
 *.vim
+# Clangd cache
+.cache
