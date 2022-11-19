@@ -22,11 +22,16 @@ set(BU_GLW_DIR ${CMAKE_SOURCE_DIR}/lib/bu_glw)
 add_subdirectory(${GLFW_DIR})
 add_subdirectory(${BU_GLW_DIR})
 
-add_executable(main ${PROJECT_SOURCE_DIR}/src/main.cpp)
+include_directories(${GLFW_DIR}/include)
+
+# Should examples be built?
+if(DEFINED BUILD_EXAMPLES)
+	add_subdirectory(${CMAKE_SOURCE_DIR}/examples)
+endif()
 
 
-include_directories(
-	${GLFW_DIR}/include
-	)
+# Add your files here
 
-target_link_libraries(main bu_glw glfw gl3w ${OPENGL_LIBRARIES})
+
+
+
