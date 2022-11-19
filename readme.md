@@ -17,9 +17,9 @@ If you have already cloned it without `--recursive` you may download the submodu
 
 The file `src/main.cpp` contains a basic example code which creates an openGL context and opens it in a window with the help of glfw.
 
-## Prerequisites ##
-* CMake (obviously)
-* GNU GCC: g++ (mingw on windows)
+## Prerequisites (for using the included `compile.sh`)##
+* CMake
+* GNU GCC
 * ninja
 * glu\*
 * Python (3 or 2 should both work)
@@ -28,7 +28,6 @@ The file `src/main.cpp` contains a basic example code which creates an openGL co
 \*Linux-only dependency - may be installed with the package manager. On Arch the package `glu` exists on its own. On Debian the package containing it is `libglu1-mesa-dev`. On other distros it may be contained in a different package.
 
 ## Build process ##
-* Windows: run `build.bat`
 * Linux: run `build.sh`
 
 On linux don't forget to run `chmod +x build.sh`.
