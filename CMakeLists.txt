@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.22.2)
+cmake_minimum_required(VERSION 3.16)
 
 project(OpenGL_Template VERSION 1.0)
 
