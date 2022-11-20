@@ -24,8 +24,6 @@ int main(void){
 		fprintf(stderr, "Failed to create glfw window!\n");
 		exit(1);
 	}
-	glfwSetWindowOpacity(window, 0.5f);
-
 	glfwSetKeyCallback(window, &glfw_key_handler);
 	
 	/* Make our window the active OpenGL context. */
@@ -75,7 +73,7 @@ int main(void){
 	vao.bind_attributes();
 	
 	/* Now let's create our shader program. It takes two paths (vertex shader and fragment shader) and
-	 * automatically compiles and links them. For a description of how to use uniforms see uniform_example.
+	 * automatically compiles and links them. For a description of how to use uniforms see uniform_api.cpp.
 	 * You can also create the two shaders manually and separately and then link them into a ShaderProgram.
 	 * There may also be an example for that. */
 	ShaderProgram prog("./basic_vertex_shader.glsl", "./basic_fragment_shader.glsl");
